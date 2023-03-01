@@ -17,7 +17,7 @@ import (
 // ChiLambda makes it easy to send API Gateway proxy events to a Chi
 // Mux. The library transforms the proxy event into an HTTP request and then
 // creates a proxy response object from the http.ResponseWriter
-type ChiLambda struct {
+type ChiLambdaV2 struct {
 	core.RequestAccessorV2
 
 	chiMux *chi.Mux
