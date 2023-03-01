@@ -26,7 +26,7 @@ type ChiLambdaV2 struct {
 // New creates a new instance of the ChiLambda object.
 // Receives an initialized *chi.Mux object - normally created with chi.NewRouter().
 // It returns the initialized instance of the ChiLambda object.
-func New(chi *chi.Mux) *ChiLambdaV2 {
+func NewV2(chi *chi.Mux) *ChiLambdaV2 {
 	return &ChiLambdaV2{chiMux: chi}
 }
 
